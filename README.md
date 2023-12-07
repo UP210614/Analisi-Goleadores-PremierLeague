@@ -7,6 +7,11 @@ sobre los goleadores de la premier-league desde la temporada 1992-93 hasta la 20
 ```` bash
 pip install pandas
 ````
+#### En linux:
 ```` bash
 sudo apt-get install python3-pandas
 ````
+
+## Conclusiones:
+
+Empezaremos por la pierna dominante

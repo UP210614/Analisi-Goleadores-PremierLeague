@@ -9,7 +9,7 @@ datos_excel = pd.read_excel(archivo_excel)
 promedio_goles_por_estatura = datos_excel.groupby('Estatura')['Goles'].mean().reset_index()
 
 # Grafica el promedio de goles por estatura
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(12, 6)).canvas.manager.set_window_title('Goles_promedio_por_estatura')
 plt.bar(promedio_goles_por_estatura['Estatura'], promedio_goles_por_estatura['Goles'], color='orange')
 plt.xlabel('Estatura')
 plt.ylabel('Promedio de Goles')

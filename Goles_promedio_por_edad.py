@@ -9,7 +9,7 @@ datos_excel = pd.read_excel(archivo_excel)
 promedio_goles_por_edad = datos_excel.groupby('Edad')['Goles'].mean().reset_index()
 
 # Grafica el promedio de goles por edad
-plt.figure(figsize=(12, 6))
+plt.figure(figsize=(12, 6)).canvas.manager.set_window_title('Goles_promedio_por_edad')
 plt.bar(promedio_goles_por_edad['Edad'], promedio_goles_por_edad['Goles'], color='red')
 plt.xlabel('Edad')
 plt.ylabel('Promedio de Goles')

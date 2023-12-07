@@ -9,7 +9,8 @@ datos_excel = pd.read_excel(archivo_excel)
 pierna_dominante_counts = datos_excel['Pierna dominante'].value_counts()
 
 # Crea un gráfico de torta
-plt.figure(figsize=(8, 8))
+
+plt.figure(figsize=(8, 8)).canvas.manager.set_window_title('Gráfico_de_pastel_goles_pierna_dominante')
 plt.pie(pierna_dominante_counts, labels=pierna_dominante_counts.index, autopct='%1.1f%%', colors=['lightcoral', 'lightskyblue','BLUE'])
 plt.title('Proporción de Piernas Dominantes')
 plt.show()

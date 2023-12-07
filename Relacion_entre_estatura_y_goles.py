@@ -6,7 +6,7 @@ archivo_excel = "Libro1.xlsx"
 datos_excel = pd.read_excel(archivo_excel)
 
 # Grafica la relación entre estatura y cantidad de goles
-plt.figure(figsize=(10, 6))
+plt.figure(figsize=(10, 6)).canvas.manager.set_window_title('Relacion_entre_estatura_y_goles')
 plt.scatter(datos_excel['Estatura'], datos_excel['Goles'], color='purple', alpha=0.7)
 plt.xlabel('Estatura')
 plt.ylabel('Goles')
