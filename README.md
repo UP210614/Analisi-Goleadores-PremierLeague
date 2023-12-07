@@ -17,5 +17,8 @@ sudo apt-get install python3-pandas
 Empezaremos por el apartado de la pierna dominante, solo hay tres: diestro,ambidiestro y zurdo.
 En el siguiente gráfico podemos que la mayoría de los goleadores son diestros, después ambidiestros y por último los
 zurdos, lo cual es un resultado que ya se esperaba debido a que es más común ser diestro que zurdo.
-![Texto alternativo](graficos/Gráfico_de_pastel_goles_pierna_dominante.png)
+
+<div style="text-align:center;">
+<img src="graficos/Gráfico_de_pastel_goles_pierna_dominante.png" alt="Texto alternativo" width="400">
+</div>
 
